@@ -44,3 +44,29 @@
 * 非同期フレームワーク用の低レベル「サーバ/アプリケーション インターフェース」を提供します。
 * Uvicornは「HTTP/1.1」＋「WebSocket」をサポートします。
 * [参考サイト](https://majisemi.com/topics/oss/4004/#:~:text=%E3%80%8CUvicorn%E3%80%8D(%E3%83%A6%E3%83%93%E3%82%B3%E3%83%BC%E3%83%B3)%E3%81%A8,WebSocket%E3%80%8D%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%BE%E3%81%99%E3%80%82)
+
+# 実装
+* api ディレクトリ作成
+* `__init__.py` の作成
+  * この api ディレクトリがpythonモジュールであることを示す 空ファイル です。
+* `main.py` の作成
+  * FastAPIのコードを記述します。
+
+# 実行
+* api ディレクトリへ移動
+* `uvicorn main:app --reload`
+* コマンドの意味
+  * main: main.pyファイル
+  * app: main.py内部で作られるobject (app = FastAPI()の部分)
+  * --reload: コード変更時のサーバー再起動
+
+# 参考サイト
+## FastAPIそのもの
+* [公式チュートリアル](https://fastapi.tiangolo.com/tutorial/first-steps/)
+* [FastAPI入門](https://zenn.dev/sh0nk/books/537bb028709ab9) 例の本の元ネタ
+* [PythonでWebAPI作ってみた](https://zenn.dev/riontajima/articles/0aab45b7c99c00)
+* [FastAPIで学ぶPythonによるREST API開発の基本](https://zenn.dev/nameless_sn/articles/fastapi_tutorial_for_rest)
+
+## API＋画像処理
+* [FastAPIでレシート画像をOCRするAPIサーバを構築する](https://sey323log.hatenablog.com/entry/20220809/1660047905)
+* [FastAPIでファイルのアップロードを行う方法](https://senablog.com/python-fastapi-file-upload/)
