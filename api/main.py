@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 
+# FastAPI のインスタンス
 app = FastAPI()
 
 
