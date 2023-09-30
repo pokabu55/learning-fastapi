@@ -53,12 +53,16 @@
   * FastAPIのコードを記述します。
 
 # 実行
+## API立ち上げ
 * api ディレクトリへ移動
 * `uvicorn main:app --reload`
 * コマンドの意味
   * main: main.pyファイル
   * app: main.py内部で作られるobject (app = FastAPI()の部分)
   * --reload: コード変更時のサーバー再起動
+## APIにアクセス
+* ブラウザで `http://127.0.0.1:8000`
+* SwaggerUIの `http://127.0.0.1:8000/docs`
 
 # 参考サイト
 ## FastAPIそのもの
